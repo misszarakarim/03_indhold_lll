@@ -1,0 +1,73 @@
+<div class="kort">
+    <div class="grid">
+        <img src="../../public/img/gio.png" alt="">
+        <h3 class="navn">Emma Jensen</h3>
+        <h3 class="id">STUDENT ID</h3>
+        <p class="arbejde">Business</p>
+        <p class="tekst">Gør som mange andre studerende og bliv medlem hos CA for 0,-</p>
+<a href="#" class="knap">BLIV MEDLEM</a>
+    </div>
+</div>
+
+<style>
+
+.kort {
+margin-left: 10px;
+margin-right: 10px;
+background-color: burlywood;
+border-radius: 6px;
+
+padding-right: 25px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-style: solid;
+border-color: #204A78;
+    }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr
+}
+.knap {
+    background-color: #204A78;
+    color: white;
+    display: inline-block;
+  
+    padding: 12px 40px;
+    margin: 10px; 
+    border-radius: 6px;
+    text-decoration: none;
+  
+    text-align: center;
+ 
+}
+
+.tekst {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+}
+
+.arbejde {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.id {
+    text-align: center;
+}
+
+img {
+    grid-column: 1;
+    grid-row: 2/ 5;
+    width: 65%;
+    height: auto;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+.navn {
+    text-align: center;
+}
+</style>
