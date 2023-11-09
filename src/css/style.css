@@ -1,0 +1,15 @@
+/* Hentning af Fonte */
+@font-face {
+    font-family: 'nexa';
+    src: url('/fonte/Nexa-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Fonte */
+
+
+h1 {
+    font-family: 'nexa';
+}
