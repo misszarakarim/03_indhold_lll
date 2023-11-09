@@ -3,11 +3,33 @@
 
 <div class="grid-container">
     <div class="top-images">
-      <img src="../../public/img/.png" alt="Image 1">
-      <img src="/path/to/image2.jpg" alt="Image 2">
+    <img src="../../public/img/Karrierskift.png" alt="Image 1">
+    <img src="../../public/img/Studere-du-business.png" alt="Image 2">
     </div>
     <div class="bottom-images">
-      <img src="/path/to/image3.jpg" alt="Image 3">
-      <img src="/path/to/image4.jpg" alt="Image 4">
+      <img src="../../public/img/Medlem-af-CA.png" alt="Image 1">
+       <img src="../../public/img/Dagpenge.png" alt="Image 1">
     </div>
   </div>
+
+
+  <style>
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .top-images,
+  .bottom-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>

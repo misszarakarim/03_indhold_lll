@@ -35,8 +35,14 @@ html {
     background-image: url(../../public/img/overlaybox.png );
     background-size: cover;
     background-repeat: no-repeat;
-
 }
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 h1,
 h2,
