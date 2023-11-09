@@ -7,9 +7,41 @@
 
 }
 
-/* Fonte */
+:root {
+    /* Fonte */
+    --font-nexa: 'nexa', Arial, sans-serif;
 
+    /* Farver */
+    --text-navy: #204A78;
+    --text-lightblue: #1895D3;
+    --text-black: #000;
+    --text-offwhite: #E6E6DE;
+    --text-gold: #AB912E;
+}
 
-h1 {
-    font-family: 'nexa';
+/* ------
+  Resets / normalize
+------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: #E6E6DE;
+    background-image: url(../../public/img/overlaybox.png );
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: var(--font-nexa);
 }
