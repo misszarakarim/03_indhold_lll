@@ -1,0 +1,53 @@
+---
+---
+
+  <div class="images-container">
+    <div>
+    <img src="../../public/img/Karrierskift.png" alt="Image 1">
+    <p>Karrierskift</p>
+     </div>
+     <div>
+     <img src="../../public/img/Studere-du-business.png" alt="Image 2">
+     <p>Studere du business?</p>
+     </div>
+     <div>
+        <img src="../../public/img/Medlem-af-CA.png" alt="Image 3">
+         <p>Medlem af CA</p>
+     </div>
+<div>
+    <img src="../../public/img/Dagpenge.png" alt="Image 4">
+    <p>Dagpenge</p>
+</div>
+  </div>
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin: 20px;
+  }
+
+   .images-container p {
+margin: 10px;
+  }
+  @media (min-width: 769px) {
+    /* Desktop layout - All images in one row */
+    .images-container {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+     .images-container img {
+   max-width: 70%;
+    margin-left: 50px;
+    }
+  }
+</style>
