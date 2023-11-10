@@ -1,0 +1,121 @@
+---
+---
+
+<footer>
+<section class="grid_text">
+<div>
+    <p>Om Ca</p>
+    <p>Kontakt</p>
+    <p>Nyheder</p>
+    <p>Nyhedsbrev</p>
+</div>
+
+<div>
+    <p>Studiepartner</p>
+    <p>Instant feedback</p>
+    <p>Løntjek</p>
+</div>
+
+<div>
+    <p>Persondatapolitik</p>
+    <p>Cookiepolitik</p>
+    <p>Tilgængelighedserklæring</p>
+</div>
+
+<div>
+    <p>Telefon hverdage 8.30-15.00</p>
+    <p class="number">3314 9045</p>
+    <p>Send en besked</p>
+</div>
+ </section>
+
+ <section class="grid_img">
+    <div>
+  <img src="../../public/img/CA_Logo_2021_horisontal_DK_RGB.png" alt="Image 2">
+    </div>
+    <div> <img src="../../public/img/trustpilot.png" alt="Image 2">
+    </div>
+    <div> <img src="../../public/img/group.png" alt="Image 2">
+    </div>
+    <div> <img src="../../public/img/student.png" alt="Image 2">
+    </div>
+ </section>
+
+
+</footer>
+
+<style>
+.grid_text{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 35px;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+div p{
+    margin-top: 20px;
+    color: var(--text-gray);
+}
+
+.number{
+    font-size: 2.3rem;
+}
+
+.grid_img{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 35px;
+}
+
+  @media (min-width: 769px) {
+    footer{
+    margin-top: 1227px;
+    margin-left: 100px;
+  }
+    }
+
+    .grid_text{
+    display: grid;
+     grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 35px;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+div p{
+    margin-top: 20px;
+    color: var(--text-gray);
+}
+
+div p:hover{
+    color: var(--text-navy);
+}
+
+.number{
+    font-size: 2.3rem;
+}
+
+.grid_img{
+    display: grid;
+     grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 35px;
+}
+  }
+</style>
