@@ -1,8 +1,8 @@
 ---
 import "../css/style.css";
 ---
-<div class="kort">
-    <div class="grid">
+<div class="kort-container">
+    <div class="kort">
         <img src="../../public/img/gio.png" alt="">
         <h3 class="navn">Emma Jensen</h3>
         <h3 class="id">STUDENT ID</h3>
@@ -14,63 +14,77 @@ import "../css/style.css";
 
 <style>
 
-.kort {
-margin-left: 10px;
-margin-right: 10px;
-background-color: burlywood;
-border-radius: 6px;
-
-padding-right: 25px;
-padding-top: 10px;
-padding-bottom: 10px;
-border-style: solid;
-border-color: #204A78;
+    .kort-container {
+        display: flex;
+        justify-content: center;
     }
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr
-}
-.knap {
+
+    .kort {
+        background-color: burlywood;
+        width: 330px;
+        height: 210px;
+          overflow: hidden;
+        border-radius: 6px;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        border-style: solid;
+border-color: #204A78;
+padding: 10px;
+    }
+
+    img {
+        width: 75%;
+        height: auto;
+grid-column: 1;
+grid-row: 2/5;
+justify-self: center;
+margin-top: 5px;
+    }
+
+    .id {
+        grid-column: 2;
+        grid-row: 1;
+       padding-bottom: 0px;
+    }
+
+    .knap {
     background-color: #204A78;
     color: white;
     display: inline-block;
   
-    padding: 12px 40px;
-    margin: 10px; 
+    padding: 17px;
+  
+
+
     border-radius: 6px;
     text-decoration: none;
   
     text-align: center;
- 
+    margin-bottom: 10px;
 }
 
 .tekst {
-    grid-column: 2;
-    grid-row: 3;
+  
     text-align: center;
+    font-size: 11px;
+    margin-bottom: 10px;
+    
 }
 
 .arbejde {
-    grid-column: 2;
-    grid-row: 2;
+
     text-align: center;
+    margin-top: 15px;
 }
 
+.navn {
+    text-align: center;
+    font-size: 14px;
+} 
 .id {
     text-align: center;
 }
 
-img {
-    grid-column: 1;
-    grid-row: 2/ 5;
-    width: 65%;
-    height: auto;
- display: block;
- margin-left: auto;
- margin-right: auto;
-}
-.navn {
-    text-align: center;
-}
 </style>
