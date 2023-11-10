@@ -3,8 +3,8 @@ import "../css/style.css";
 ---
 <div class="kort-container">
     <div class="kort">
-        <img src="../../public/img/gio.png" alt="">
-        <h3 class="navn">Emma Jensen</h3>
+        <img src="" alt="" id="image">
+        <h3 class="navn" id="name"></h3>
         <h3 class="id">STUDENT ID</h3>
         <p class="arbejde">Business</p>
         <p class="tekst">Gør som mange andre studerende og bliv medlem hos CA for 0,-</p>
@@ -20,7 +20,7 @@ import "../css/style.css";
     }
 
     .kort {
-        background-color: burlywood;
+        background-color: rgb(255, 255, 255);
         width: 330px;
         height: 210px;
           overflow: hidden;
@@ -41,6 +41,8 @@ grid-column: 1;
 grid-row: 2/5;
 justify-self: center;
 margin-top: 5px;
+display: block;
+
     }
 
     .id {
@@ -82,9 +84,30 @@ margin-top: 5px;
 .navn {
     text-align: center;
     font-size: 14px;
+ 
 } 
 .id {
     text-align: center;
 }
 
 </style>
+
+
+<script type="text/javascript">
+    let kort = document.querySelector('.kort');
+    let image = kort.querySelector('#image');
+    let nameElement = kort.querySelector('#name');
+
+    let images = ['../../public/img/gio.png', '../../public/img/jinni.png', '../../public/img/hobibi.png', '../../public/img/namnam.png'];
+    let names = ['Emma Jensen', 'Zara Karim', 'Liv Andersen', 'Kezia Hansen'];
+
+    let currentIndex = 0;
+
+    setInterval(function () {
+        image.src = images[currentIndex];
+        nameElement.innerText = names[currentIndex];
+        
+        // Increment the index or reset it to 0 if it reaches the end
+        currentIndex = (currentIndex + 1) % images.length;
+    }, 800);
+</script>
