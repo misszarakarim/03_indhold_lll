@@ -2,6 +2,7 @@
 import "../css/style.css";
 import Kort from "../components/Kort.astro";
 import Guldbox from "../components/Guldbox.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <html lang="da">
@@ -13,10 +14,10 @@ import Guldbox from "../components/Guldbox.astro";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 
-		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+	<Nav/>
+	<Guldbox/>
 	</body>
 </html>
 
