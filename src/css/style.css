@@ -1,22 +1,21 @@
 /* Hentning af Fonte */
 @font-face {
-    font-family: 'nexa';
-    src: url('/fonte/Nexa-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "nexa";
+  src: url("/fonte/Nexa-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-    /* Fonte */
-    --font-nexa: 'nexa', Arial, sans-serif;
+  /* Fonte */
+  --font-nexa: "nexa", Arial, sans-serif;
 
-    /* Farver */
-    --text-navy: #204A78;
-    --text-lightblue: #1895D3;
-    --text-gray: #4A4A4A;
-    --text-offwhite: #E6E6DE;
-    --text-gold: #AB912E;
+  /* Farver */
+  --text-navy: #204a78;
+  --text-lightblue: #1895d3;
+  --text-gray: #4a4a4a;
+  --text-offwhite: #e6e6de;
+  --text-gold: #ab912e;
 }
 
 /* ------
@@ -24,30 +23,44 @@
 ------ */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    background-color: #E6E6DE;
-    background-image: url(../../public/img/overlaybox.png );
-    background-size: cover;
-    background-repeat: no-repeat;
+  height: 100%;
+  background-color: #e6e6de;
+  background-image: url(../../public/img/bokse.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
 
 h1,
 h2,
 h3,
 p,
 a {
-    font-family: var(--font-nexa);
+  font-family: var(--font-nexa);
+}
+
+.overskrift {
+  color: #1895d3;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+.overskrift2 {
+  color: #1895d3;
+  font-size: 15px;
+  margin-left: 42%;
+  margin-top: -1%;
+}
+span {
+  color: #204a78;
 }
